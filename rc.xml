@@ -89,7 +89,7 @@
     <firstdesk>1</firstdesk>
     <names>
     </names>
-    <popupTime>1000</popupTime>
+    <popupTime>500</popupTime>
   </desktops>
 
   <resize>
@@ -327,12 +327,78 @@
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>0</x>
+        <y>-0</y>
+      </action>
+    </keybind>
+    <keybind key="W-KP_2">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>-0</y>
+      </action>
+    </keybind>
+    <keybind key="W-KP_3">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>-0</y>
+      </action>
+    </keybind>
+    <keybind key="W-KP_4">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>center</y>
+      </action>
+    </keybind>
+    <keybind key="W-KP_5">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>center</y>
+      </action>
+    </keybind>
+    <keybind key="W-KP_6">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>center</y>
+      </action>
+    </keybind>
+    <keybind key="W-KP_7">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+      </action>
+    </keybind>
+    <keybind key="W-KP_8">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>0</y>
+      </action>
+    </keybind>
+    <keybind key="W-KP_9">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>-0</x>
+        <y>0</y>
+      </action>
+    </keybind>
+    <!-- /subtle-style window placement -->
+
+    <!-- same as above, but resizes windows too -->
+    <keybind key="W-S-KP_1">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
         <y>50%</y>
         <width>50%</width>
         <height>50%</height>
       </action>
     </keybind>
-    <keybind key="W-KP_2">
+    <keybind key="W-S-KP_2">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>0</x>
@@ -341,7 +407,7 @@
         <height>50%</height>
       </action>
     </keybind>
-    <keybind key="W-KP_3">
+    <keybind key="W-S-KP_3">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>50%</x>
@@ -350,7 +416,7 @@
         <height>50%</height>
       </action>
     </keybind>
-    <keybind key="W-KP_4">
+    <keybind key="W-S-KP_4">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>0</x>
@@ -359,7 +425,7 @@
         <height>100%</height>
       </action>
     </keybind>
-    <keybind key="W-KP_5">
+    <keybind key="W-S-KP_5">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>25%</x>
@@ -368,7 +434,7 @@
         <height>50%</height>
       </action>
     </keybind>
-    <keybind key="W-KP_6">
+    <keybind key="W-S-KP_6">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>50%</x>
@@ -377,7 +443,7 @@
         <height>100%</height>
       </action>
     </keybind>
-    <keybind key="W-KP_7">
+    <keybind key="W-S-KP_7">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>0</x>
@@ -386,7 +452,7 @@
         <height>50%</height>
       </action>
     </keybind>
-    <keybind key="W-KP_8">
+    <keybind key="W-S-KP_8">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>0</x>
@@ -395,7 +461,7 @@
         <height>50%</height>
       </action>
     </keybind>
-    <keybind key="W-KP_9">
+    <keybind key="W-S-KP_9">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>50%</x>
@@ -404,7 +470,6 @@
         <height>50%</height>
       </action>
     </keybind>
-    <!-- /subtle-style window placement -->
 
     <!-- keybindings for moving windows -->
     <keybind key="W-a">
@@ -515,7 +580,7 @@
           <enabled>false</enabled>
           <name>chromium</name>
         </startupnotify>
-        <command>chromium</command>
+        <command>google-chrome</command>
       </action>
     </keybind>
     <keybind key="W-t">
@@ -893,22 +958,22 @@
     </application>
     <application class="Firefox">
       <position>
-        <x>5%</x>
-        <y>5%</y>
+        <x>center</x>
+        <y>center</y>
         <width>90%</width>
         <height>90%</height>
       </position>
       <decor>no</decor>
       <desktop>2</desktop>
     </application>
-    <application class="Chromium">
+    <application class="google-chrome">
       <position>
-        <x>0</x>
-        <y>0</y>
-        <width>75%</width>
+        <x>center</x>
+        <y>center</y>
+        <width>90%</width>
         <height>90%</height>
       </position>
-      <!--<decor>no</decor>-->
+      <decor>no</decor>
       <desktop>2</desktop>
     </application>
     <application class="feh">

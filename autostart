@@ -1,2 +1,2 @@
-$HOME/scripts/check_mail.sh &
+~/scripts/check_mail.sh &
 eval $(cat ~/.fehbg)
