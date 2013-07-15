@@ -175,6 +175,7 @@
       </action>
     </keybind>
 
+
     <!-- send current window to desktop N -->
     <keybind key="W-S-1">
       <action name="SendToDesktop">
@@ -206,6 +207,7 @@
         <to>6</to>
       </action>
     </keybind>
+
 
     <keybind key="W-C-d">
       <action name="ToggleShowDesktop"/>
@@ -393,27 +395,27 @@
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>0</x>
-        <y>50%</y>
-        <width>50%</width>
-        <height>50%</height>
+        <y>-0</y>
+        <width>49%</width>
+        <height>49%</height>
       </action>
     </keybind>
     <keybind key="W-S-KP_2">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>0</x>
-        <y>50%</y>
+        <y>-0</y>
         <width>100%</width>
-        <height>50%</height>
+        <height>49%</height>
       </action>
     </keybind>
     <keybind key="W-S-KP_3">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>50%</x>
-        <y>50%</y>
-        <width>50%</width>
-        <height>50%</height>
+        <x>-0</x>
+        <y>-0</y>
+        <width>49%</width>
+        <height>49%</height>
       </action>
     </keybind>
     <keybind key="W-S-KP_4">
@@ -421,15 +423,15 @@
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
-        <width>50%</width>
+        <width>49%</width>
         <height>100%</height>
       </action>
     </keybind>
     <keybind key="W-S-KP_5">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>25%</x>
-        <y>25%</y>
+        <x>center</x>
+        <y>center</y>
         <width>50%</width>
         <height>50%</height>
       </action>
@@ -437,9 +439,9 @@
     <keybind key="W-S-KP_6">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>50%</x>
+        <x>-0</x>
         <y>0</y>
-        <width>50%</width>
+        <width>49%</width>
         <height>100%</height>
       </action>
     </keybind>
@@ -448,8 +450,8 @@
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
-        <width>50%</width>
-        <height>50%</height>
+        <width>49%</width>
+        <height>49%</height>
       </action>
     </keybind>
     <keybind key="W-S-KP_8">
@@ -458,16 +460,16 @@
         <x>0</x>
         <y>0</y>
         <width>100%</width>
-        <height>50%</height>
+        <height>49%</height>
       </action>
     </keybind>
     <keybind key="W-S-KP_9">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
-        <x>50%</x>
+        <x>-0</x>
         <y>0</y>
-        <width>50%</width>
-        <height>50%</height>
+        <width>49%</width>
+        <height>49%</height>
       </action>
     </keybind>
 
@@ -865,32 +867,12 @@
       </mousebind>
     </context>
     <context name="Desktop">
-      <mousebind button="Up" action="Click">
+      <mousebind button="Button6" action="Click">
         <action name="GoToDesktop">
           <to>previous</to>
         </action>
       </mousebind>
-      <mousebind button="Down" action="Click">
-        <action name="GoToDesktop">
-          <to>next</to>
-        </action>
-      </mousebind>
-      <mousebind button="A-Up" action="Click">
-        <action name="GoToDesktop">
-          <to>previous</to>
-        </action>
-      </mousebind>
-      <mousebind button="A-Down" action="Click">
-        <action name="GoToDesktop">
-          <to>next</to>
-        </action>
-      </mousebind>
-      <mousebind button="C-A-Up" action="Click">
-        <action name="GoToDesktop">
-          <to>previous</to>
-        </action>
-      </mousebind>
-      <mousebind button="C-A-Down" action="Click">
+      <mousebind button="Button7" action="Click">
         <action name="GoToDesktop">
           <to>next</to>
         </action>
@@ -966,7 +948,7 @@
       <decor>no</decor>
       <desktop>2</desktop>
     </application>
-    <application class="google-chrome">
+    <application class="Google-chrome">
       <position>
         <x>center</x>
         <y>center</y>
