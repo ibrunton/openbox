@@ -1,2 +1,3 @@
 ~/scripts/check_mail.sh &
-eval $(cat ~/.fehbg)
+conky &
+source ~/.fehbg

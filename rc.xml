@@ -110,7 +110,7 @@
   </resize>
 
   <margins>
-    <top>0</top>
+    <top>18</top>
     <bottom>0</bottom>
     <left>0</left>
     <right>0</right>
@@ -180,31 +180,37 @@
     <keybind key="W-S-1">
       <action name="SendToDesktop">
         <to>1</to>
+	<follow>no</follow>
       </action>
     </keybind>
     <keybind key="W-S-2">
       <action name="SendToDesktop">
         <to>2</to>
+	<follow>no</follow>
       </action>
     </keybind>
     <keybind key="W-S-3">
       <action name="SendToDesktop">
         <to>3</to>
+	<follow>no</follow>
       </action>
     </keybind>
     <keybind key="W-S-4">
       <action name="SendToDesktop">
         <to>4</to>
+	<follow>no</follow>
       </action>
     </keybind>
     <keybind key="W-S-5">
       <action name="SendToDesktop">
         <to>5</to>
+	<follow>no</follow>
       </action>
     </keybind>
     <keybind key="W-S-6">
       <action name="SendToDesktop">
         <to>6</to>
+	<follow>no</follow>
       </action>
     </keybind>
 
@@ -396,8 +402,8 @@
       <action name="MoveResizeTo">
         <x>0</x>
         <y>-0</y>
-        <width>49%</width>
-        <height>49%</height>
+        <width>50%</width>
+        <height>50%</height>
       </action>
     </keybind>
     <keybind key="W-S-KP_2">
@@ -406,7 +412,7 @@
         <x>0</x>
         <y>-0</y>
         <width>100%</width>
-        <height>49%</height>
+        <height>50%</height>
       </action>
     </keybind>
     <keybind key="W-S-KP_3">
@@ -414,8 +420,8 @@
       <action name="MoveResizeTo">
         <x>-0</x>
         <y>-0</y>
-        <width>49%</width>
-        <height>49%</height>
+        <width>50%</width>
+        <height>50%</height>
       </action>
     </keybind>
     <keybind key="W-S-KP_4">
@@ -423,7 +429,7 @@
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
-        <width>49%</width>
+        <width>50%</width>
         <height>100%</height>
       </action>
     </keybind>
@@ -441,7 +447,7 @@
       <action name="MoveResizeTo">
         <x>-0</x>
         <y>0</y>
-        <width>49%</width>
+        <width>50%</width>
         <height>100%</height>
       </action>
     </keybind>
@@ -450,8 +456,8 @@
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
-        <width>49%</width>
-        <height>49%</height>
+        <width>50%</width>
+        <height>50%</height>
       </action>
     </keybind>
     <keybind key="W-S-KP_8">
@@ -460,7 +466,7 @@
         <x>0</x>
         <y>0</y>
         <width>100%</width>
-        <height>49%</height>
+        <height>50%</height>
       </action>
     </keybind>
     <keybind key="W-S-KP_9">
@@ -468,8 +474,8 @@
       <action name="MoveResizeTo">
         <x>-0</x>
         <y>0</y>
-        <width>49%</width>
-        <height>49%</height>
+        <width>50%</width>
+        <height>50%</height>
       </action>
     </keybind>
 
@@ -508,23 +514,63 @@
 	</action>
       </keybind>
       <keybind key="W-s">
-	<action name="ResizeRelative">
-	  <top>20</top>
+	<action name="If">
+	  <title>urxvt</title>
+	  <then>
+	    <action name="ResizeRelative">
+	      <top>1</top>
+	    </action>
+      	  </then>
+	  <else>
+	    <action name="ResizeRelative">
+	      <top>20</top>
+	    </action>
+	  </else>
 	</action>
       </keybind>
       <keybind key="W-S-s">
-	<action name="ResizeRelative">
-	  <top>-20</top>
+	<action name="If">
+	  <title>urxvt</title>
+	  <then>
+	    <action name="ResizeRelative">
+	      <top>-1</top>
+	    </action>
+	  </then>
+	  <else>
+	    <action name="ResizeRelative">
+	      <top>-20</top>
+	    </action>
+	  </else>
 	</action>
       </keybind>
       <keybind key="W-d">
-	<action name="ResizeRelative">
-	  <bottom>20</bottom>
+	<action name="If">
+	  <title>urxvt</title>
+	  <then>
+	    <action name="ResizeRelative">
+	      <bottom>1</bottom>
+	    </action>
+	  </then>
+	  <else>
+	    <action name="ResizeRelative">
+	      <bottom>20</bottom>
+	    </action>
+	  </else>
 	</action>
       </keybind>
       <keybind key="W-S-d">
-	<action name="ResizeRelative">
-	  <bottom>-20</bottom>
+	<action name="If">
+	  <title>urxvt</title>
+	  <then>
+	    <action name="ResizeRelative">
+	      <bottom>-1</bottom>
+	    </action>
+	  </then>
+	  <else>
+	    <action name="ResizeRelative">
+	      <bottom>-20</bottom>
+	    </action>
+	  </else>
 	</action>
       </keybind>
       <keybind key="W-f">
@@ -610,6 +656,48 @@
           <name>dmenu</name>
         </startupnotify>
         <command>/home/ian/scripts/dmenu_custom.bash</command>
+      </action>
+    </keybind>
+
+    <!-- volume -->
+    <keybind key="W-F10">
+      <action name="Execute">
+	<startupnotify>
+	  <enabled>false</enabled>
+	</startupnotify>
+	<command>/home/ian/scripts/volosd.sh down -i 1</command>
+      </action>
+    </keybind>
+    <keybind key="W-F11">
+      <action name="Execute">
+	<startupnotify>
+	  <enabled>false</enabled>
+	</startupnotify>
+	<command>/home/ian/scripts/volosd.sh mute</command>
+      </action>
+    </keybind>
+    <keybind key="W-F12">
+      <action name="Execute">
+	<startupnotify>
+	  <enabled>false</enabled>
+	</startupnotify>
+	<command>/home/ian/scripts/volosd.sh up -i 1</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-F10">
+      <action name="Execute">
+	<startupnotify>
+	  <enabled>false</enabled>
+	</startupnotify>
+	<command>mpc volume -1</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-F12">
+      <action name="Execute">
+	<startupnotify>
+	  <enabled>false</enabled>
+	</startupnotify>
+	<command>mpc volume +1</command>
       </action>
     </keybind>
   </keyboard>
